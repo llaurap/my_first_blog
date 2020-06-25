@@ -4,8 +4,14 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
+from .models import Event
+#from .forms import EventForm
 
 # Create your views here.
+
+##########
+#  BLOG  #
+##########
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -41,3 +47,22 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+##############
+#  TIMELINE  #
+##############
+
+def event_list(request):
+    events = Event.objects
+    return render(request,'blog/event_list.html', {'events': events})
+
+#def event_new(request):
+ #   if request.method == "EVENT":
+  #      form = EventForm(request.EVENT)
+   #     if form.is_valid():
+    #        event = form.save(commit=False)
+     #       event.save()
+      #      return redirect('event_list')
+    #else:
+     #   form = EventForm()
+    #return render(request, 'blog/event_list.html')

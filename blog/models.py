@@ -15,3 +15,12 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class Event(models.Model):
+    title = models.CharField(max_length=300)
+
+    def publish(self):
+        self.save()
+
+    def __str__(self):
+        return self.title

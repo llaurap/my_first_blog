@@ -1,28 +1,73 @@
 h1 a, h2 a {
-    color: #C25100;
-    font-family: 'Lobster';
+    font-family: candara;
 }
 body {
-    padding-left: 15px;
 }
+    /************/
+    /*  HEADER  */
+    /************/
+
 .page-header {
-    background-color: #C25100;
+    background-color: rgb(98, 203, 235);
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 20px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    text-align: center;
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
 }
-
-.content {
-    margin-left: 40px;
+.moto {
+    text-align: center;
+    color: ivory;
+    font-family: candara;
 }
 
+ul {
+    margin: 0;
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px
+}
+
+.header_button {
+    font-family: candara;
+    font-size: 14pt;
+    color: ivory;
+}
+
+    /*************/
+    /*  CONTENT  */
+    /*************/
+
+.content {
+    background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    padding-left: 50px;
+}
+.col-md-8 {
+
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: candara;
 }
 
 .date {
@@ -41,7 +86,7 @@ h1, h2, h3, h4 {
     color: #ffffff;
     float: right;
     font-size: 26pt;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .post {
