@@ -18,6 +18,7 @@ class Post(models.Model):
 
 class Event(models.Model):
     title = models.CharField(max_length=300)
+    left_side = models.BooleanField(default=False)
 
     def publish(self):
         self.save()

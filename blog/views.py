@@ -4,8 +4,8 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
-#from .models import Event
-#from .forms import EventForm
+from .models import Event
+from .forms import EventForm
 
 # Create your views here.
 
@@ -53,8 +53,8 @@ def post_edit(request, pk):
 ##############
 
 def event_list(request):
-    #events = Event.objects
-    return render(request,'blog/event_list.html') #{'events': events})
+    events = Event.objects.all()
+    return render(request,'blog/event_list.html', {'events': events})
 
 #def event_new(request):
  #   if request.method == "EVENT":
