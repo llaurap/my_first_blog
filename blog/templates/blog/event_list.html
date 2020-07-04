@@ -12,7 +12,11 @@
                 <li>
                 
                         <div class="event">
+                            <h5 class="event_time">{{event.month_to_display}} {{event.year}}</h5>
                             <h4>{{ event.title }}</h4>
+                            {% if event.description != blank %}
+                                <p class="description">{{ event.description }}</p>
+                            {% endif %}
                         </div>
                 
                 </li>

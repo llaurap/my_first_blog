@@ -18,7 +18,10 @@ class Post(models.Model):
 
 class Event(models.Model):
     title = models.CharField(max_length=300)
-    left_side = models.BooleanField(default=False)
+    year = models.PositiveIntegerField(default=2020)
+    month = models.PositiveIntegerField(default=1)
+    month_to_display = models.CharField(max_length=60, default="")
+    description = models.CharField(blank=True, max_length=120)
 
     def publish(self):
         self.save()

@@ -12,4 +12,4 @@ class EventForm(forms.ModelForm):
 
     class Meta:
         model = Event
-        fields = ('title', 'left_side',)
+        fields = ('title', 'year', 'month', 'month_to_display', 'description')

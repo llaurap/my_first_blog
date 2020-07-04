@@ -7,5 +7,5 @@ urlpatterns = [
     path('post/new/', views.post_new, name='post_new'),
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
     path('timeline/', views.event_list, name="event_list"),
-    #path('event/new', views.event_new, name="event_new"),
+    path('event/new/', views.event_new, name="event_new"),
 ]

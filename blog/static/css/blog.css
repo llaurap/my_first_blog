@@ -8,9 +8,15 @@ body {
     /************/
 
 .page_header {
-    background-color: rgb(98, 203, 235);
+    background-color: rgb(98, 192, 221);
     margin-top: 0;
     padding: 20px 20px 20px 20px;
+}
+
+.top_menu{
+    background-color: none;
+    color: rgb(234, 242, 255);
+    margin-left: 35px;
 }
 
 .page_header h1, .page_header h1 a, .page_header h1 a:visited, .page_header h1 a:active {
@@ -21,7 +27,7 @@ body {
 }
 .moto {
     text-align: center;
-    color: ivory;
+    color: rgb(255, 255, 255);
     font-family: candara;
 }
 
@@ -40,9 +46,9 @@ body {
 }
 
 .header_button {
+    color: ivory;
     font-family: candara;
     font-size: 14pt;
-    color: ivory;
 }
 
 /***************/
@@ -50,7 +56,7 @@ body {
 /***************/
 
 .content_container {
-    /*background-color: magenta;*/
+    background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
     padding-left: 5%;
@@ -72,16 +78,8 @@ h1, h2, h3, h4 {
 .post-form textarea, .post-form input {
     width: 100%;
 }
-/*
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 10px;
-}*/
 
 .post_wrapper {
-    /*background-color: rgb(79, 79, 204);*/
     padding-top: 30px;
     text-align: center;
     margin-right: 10%;
@@ -90,14 +88,11 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    /*background-color: mediumturquoise;*/
     display:inline-block;
     margin-bottom: 70px;
-
     position: relative;
     left: auto;
     right: auto;
-
     width: 100%
 }
 
@@ -124,121 +119,6 @@ h1, h2, h3, h4 {
 /***************************************/
 /*              TIMELINE               */
 /***************************************/
-/*
-.timeline_wrapper {
-    /*background-color: rgb(79, 79, 204);
-    padding-top: 30px;
-    text-align: center;/*
-    margin-right: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-/*
-.side_container {
-    width: 100%
-}
-
-.timeline ul li {
-    list-style: none;
-    line-height: normal;
-    position: relative;
-}
-
-
-
-.timeline:before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    width: 2px;
-    height: 100%;
-    background: #c5c5c5;
-}
-/*
-.timeline {
-    background-color: khaki;
-    /*position: relative;
-    margin: 50px auto;
-    /*width: 1000px;
-
-}
-
-.timeline ul li {
-    background-color: lightcoral;
-    list-style: none;
-    line-height: normal;
-    position: relative;
-    width: 50%;
-    padding: 20px 20px;
-    box-sizing: border-box;
-}
-
-.left h4, .right h4 {
-    background-color: rgb(255, 215, 142);
-    border-radius: 25px;
-    box-shadow: 10px 15px 8px #5580dd;
-    margin-bottom: 25px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    clear: both;
-}/*
-.left {
-    float: left;/*
-    text-align: left;
-    width: 100%;
-}
-
-
-.left h4 {
-    
-    border-radius: 30px 10px 30px 30px;
-    padding-right: 30px;
-    float: left;
-    text-align: right;
-    width: 45%;
-}/*
-.right {
-    /*background-color: lightskyblue;
-    float: right;
-    width: 100%;
-}
-.right h4 {
-    border-radius: 10px 30px 30px 30px;
-    padding-left: 30px;
-    float: right;
-    text-align: left;
-    width: 50%;
-}
-/*
-.timeline ul li:before {
-    content: '';
-    background: #5580dd;
-    border-radius: 50%;
-    height: 10px;
-    position: absolute;
-    right: -6px;
-    /*top: 24px;
-    width: 10px;
-}
-.left h4:before , .right h4:before {
-    background: #5580dd;
-    border-radius: 50%;
-    content: '';
-    height: 20px;
-    left: 48.1%;
-    opacity: 0.5;
-    position: absolute;
-    /*right: -6px;
-    /*top: 24px;
-    width: 20px;
-}
-/*
-.left h4:before {
-    left: 48.1%;
-}
-.right h4:before {
-    left: 48.1%;
-}*/
 
 .timeline {
     margin: 50px auto;
@@ -259,12 +139,14 @@ h1, h2, h3, h4 {
     padding: 0;
 }
 .timeline ul li {
-    box-sizing: border-box;
+    box-sizing: content-box;
     line-height: normal;
     list-style: none;
     position: relative;
-    width: 47%;
-    padding: 0px 40px;
+    width: 43%;
+    padding: 5px 20px 20px 20px;
+    margin-bottom: 40px;
+    height: 80%;
 }
 
 .timeline ul li:nth-child(odd) {
@@ -273,9 +155,6 @@ h1, h2, h3, h4 {
     text-align: right;
     clear: both;
 }
-.timeline ul li:nth-child(odd) {
-    border-radius: 30px 10px 30px 30px;
-}
 
 .timeline ul li:nth-child(even) {
     border-radius: 10px 30px 30px 30px;
@@ -283,29 +162,31 @@ h1, h2, h3, h4 {
     text-align: left;
     clear: both;
 }
-.timeline ul li:nth-child(even) {
-    border-radius: 10px 30px 30px 30px;
-}
 .event {
-    padding-bottom: 20px;
+    display: inline-block;
 }
 
-
-
-.timeline ul li:nth-child(odd):before {
-    right: -38.5px;
+.event_time {
+    background-color: rgb(255, 232, 169);
+    border-radius: 10px 30px 30px 30px;
+    font-family: candara;
+    font-weight: 600;
+    padding: 5px 5px 5px 5px;
+    width: 100%
 }
-
-.timeline ul li:nth-child(even):before {
-    left: -36.5px;
+.timeline ul li:nth-child(odd) div h5{
+    border-radius: 30px 10px 30px 30px;
+}
+.description {
+    color: rgb(0, 0, 0);
+    font-family: candara;
 }
 
 .timeline ul li {
-    background-color: rgb(255, 214, 127);
-    height: 10%;/*
-    padding: 15px 15px;*/
+    background-color: rgb(255, 211, 129);
+    box-shadow: 20px 10px 8px  rgb(30, 108, 172);
+    height: 10%;
 }
-
 /**********************/
 /*        DOTS        */
 /**********************/
@@ -316,6 +197,68 @@ h1, h2, h3, h4 {
     width: 15px;
     height: 15px;
     background: #5580dd;
+    box-shadow: 3px 3px 10px rgb(38, 101, 173);
     border-radius: 50%;
 }
+
+.timeline ul li:nth-child(odd):before {
+    right: -38.5px;
+}
+
+.timeline ul li:nth-child(even):before {
+    left: -36.5px;
+}
 /**********************/
+
+
+
+
+@media screen and (max-width: 1060px) {
+
+    .timeline {
+        width: 700px;
+    }
+
+    .timeline ul li {
+        width: 41.5%;
+    }
+
+    .timeline ul li:nth-child(odd):before {
+        right: -28.5px;
+    }
+    
+    .timeline ul li:nth-child(even):before {
+        left: -25.5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .timeline {
+        width: 350px;
+    }
+    .timeline ul li {
+        /*width: 150px; */
+        width: 76.55%;
+    }
+
+    .timeline ul li:nth-child(odd):before {
+        left: -48px;
+    }
+    
+    .timeline ul li:nth-child(even):before {
+        left: -48px;
+    }
+
+    .timeline ul li:nth-child(odd) {
+        background-color: cornflowerblue;
+        border-radius: 10px 30px 30px 30px;
+        float: right;
+        text-align: left;
+        clear: both;
+    }
+
+    .timeline:before {
+        left: 0%;
+    }
+}
