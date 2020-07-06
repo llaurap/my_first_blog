@@ -53,7 +53,7 @@ def post_edit(request, pk):
 ##############
 
 def event_list(request):
-    events = Event.objects.order_by('-year').order_by('-month')
+    events = Event.objects.order_by('-year', '-month')
     return render(request,'blog/event_list.html', {'events': events})
 
 def event_new(request):
