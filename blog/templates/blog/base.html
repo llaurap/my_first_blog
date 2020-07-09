@@ -21,13 +21,10 @@
                         <li class="header_button"><a href="{% url 'event_list' %}">Timeline</a></li>
                     </ul>
                 </nav>
-                
         </header>
         <div class="content_container">
-                <!--<div class="col-md-8">-->
-                    {% block content %}
-                    {% endblock %}
-                <!--</div>-->
+            {% block content %}
+            {% endblock %}
         </div>
     </body>
 </html>

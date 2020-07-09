@@ -1,15 +1,14 @@
+
+/******************/
+/*     HEADER     */
+/******************/
+
 h1 a, h2 a {
     font-family: candara;
 }
-body {
-}
-    /************/
-    /*  HEADER  */
-    /************/
 
 .page_header {
     background-color: rgb(111, 200, 228);
-    margin-top: 0;
     padding: 20px 20px 20px 20px;
 }
 
@@ -24,6 +23,9 @@ body {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+}
+.page_header h1 a {
+    text-shadow: 0px 1px 1px rgb(30, 108, 172);
 }
 .moto {
     text-align: center;
@@ -45,8 +47,8 @@ body {
     margin-left: 20px
 }
 
-.header_button {
-    color: ivory;
+.header_button a{
+    color: rgb(30, 108, 172);
     font-family: candara;
     font-size: 14pt;
 }
@@ -68,7 +70,7 @@ h1, h2, h3, h4 {
 }
 
 /****************/
-/*     POST     */
+/*     BLOG     */
 /****************/
 
 .save {
@@ -94,7 +96,7 @@ h1, h2, h3, h4 {
     position: relative;
     left: auto;
     right: auto;
-    width: 100%
+    width: 100%;
 }
 
 .date {
@@ -103,16 +105,21 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
-.post h2 a, .post h2 a:visited {
-    color: #5580dd;
+.post h2 a, .post h2 a:visited, .post h2 {
+    color: rgb(30, 108, 172);
     float: left;
     width: 100%;
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
 }
 
 .post p {
+    color: rgb(82, 78, 82);
+    font-family: candara;
+    font-stretch: semi-expanded;
     text-align: left;
+    font-size: 16px;
+    line-height: 24px;;
 }
 
 
@@ -183,7 +190,9 @@ h1, h2, h3, h4 {
 .description {
     color: rgb(0, 0, 0);
     font-family: candara;
+    font-stretch: semi-expanded;
     font-size: 12px;
+    line-height: 16px;
 }
 
 
