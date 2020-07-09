@@ -8,7 +8,7 @@ body {
     /************/
 
 .page_header {
-    background-color: rgb(98, 192, 221);
+    background-color: rgb(111, 200, 228);
     margin-top: 0;
     padding: 20px 20px 20px 20px;
 }
@@ -131,7 +131,9 @@ h1, h2, h3, h4 {
     content: '';
     position: absolute;
     left: 50%;
-    width: 2px;
+    width: 2px;/*
+    top: 0px;
+    bottom: 0px;*/
     height: 100%;
     background: #c5c5c5;
 }
@@ -140,14 +142,16 @@ h1, h2, h3, h4 {
     padding: 0;
 }
 .timeline ul li {
-    box-sizing: content-box;
+    box-sizing: initial;
     line-height: normal;
     list-style: none;
     position: relative;
     width: 43%;
-    padding: 5px 20px 20px 20px;
+    padding: 2px 20px 20px 20px;
     margin-bottom: 40px;
-    height: 80%;
+    background-color: rgb(255, 214, 138);
+    box-shadow: 20px 10px 8px  rgb(30, 108, 172);
+    height: relative;
 }
 
 .timeline ul li:nth-child(odd) {
@@ -181,13 +185,10 @@ h1, h2, h3, h4 {
 .description {
     color: rgb(0, 0, 0);
     font-family: candara;
+    font-size: 12px;
 }
 
-.timeline ul li {
-    background-color: rgb(255, 211, 129);
-    box-shadow: 20px 10px 8px  rgb(30, 108, 172);
-    height: 10%;
-}
+
 /**********************/
 /*        DOTS        */
 /**********************/
