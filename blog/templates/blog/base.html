@@ -6,25 +6,44 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        
     </head>
     <body>
+        
+
         <header class="page_header">
+            <div class="page_header_section">
             {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top_menu"><span class="glyphicon glyphicon-plus"> New post</span></a>
-                <a href="{% url 'event_new' %}" class="top_menu"><span class="glyphicon glyphicon-plus"> New event</span></a>
+                <div class="admin_menu">
+                    <a href="{% url 'post_new' %}" class="top_menu"><span class="glyphicon glyphicon-plus"> New post</span></a>
+                    <a href="{% url 'event_new' %}" class="top_menu"><span class="glyphicon glyphicon-plus"> New event</span></a>
+                </div>
             {% endif %}
                 <h1><a href="/">Laura Puckoriute</a></h1>
                 <h5 class="moto">Computer Science student at University of Birmingham</h5>
-                <nav>
+            </div>    
+        </header>
+        
+        <header class="page_header2">
+            <nav>
                     <ul>
                         <li class="header_button"><a href="/">Blog</a></li>
                         <li class="header_button"><a href="{% url 'event_list' %}">Timeline</a></li>
                     </ul>
                 </nav>
+
         </header>
-        <div class="content_container">
-            {% block content %}
-            {% endblock %}
+        <div class="parallax">
+            <div class="content_section">
+                {% block content %}
+                {% endblock %}
+            </div>
         </div>
+        <footer class="page_footer">
+            <div>
+                <p class="email">puckoriutelaura@gmail.com</p>
+            </div>
+        </footer>
+        
     </body>
 </html>

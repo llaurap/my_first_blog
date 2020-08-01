@@ -1,56 +1,105 @@
-
-/******************/
-/*     HEADER     */
-/******************/
-
-h1 a, h2 a {
-    font-family: candara;
+body {
+    background-color: rgb(247, 247, 247);
 }
 
+h1 a, h2 a {
+    font-family: Arial, Helvetica, serif;
+}
+
+/****************/
+/*   HEADER 1   */
+/****************/
 .page_header {
-    background-color: rgb(111, 200, 228);
-    padding: 20px 20px 20px 20px;
+    background-color: rgb(79, 193, 228);
+    padding: 140px 20px 20px 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    
+
+   background-image: url(uni3.jpg);
+
+    min-height: 400px;  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -700px;
+}
+
+.admin_menu {
+    position: relative;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .top_menu{
     background-color: none;
     color: rgb(234, 242, 255);
     margin-left: 35px;
+    margin-top: 0px;
 }
 
-.page_header h1, .page_header h1 a, .page_header h1 a:visited, .page_header h1 a:active {
+.page_header_section h1, .page_header_section h1 a, .page_header_section h1 a:visited, .page_header_section h1 a:active {
     text-align: center;
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
 }
-.page_header h1 a {
-    text-shadow: 0px 1px 1px rgb(30, 108, 172);
+.page_header_section h1 a {
+    font-stretch: semi-expanded;
+    font-weight: 700;
+    text-shadow: 0px 1px 1px  rgb(37, 77, 110);
 }
 .moto {
     text-align: center;
     color: rgb(255, 255, 255);
-    font-family: candara;
+    font-family: arial;
 }
 
-.page_header nav ul {
-    margin-top: 30px;
+/******************/
+/*    HEADER 2    */
+/******************/
+
+.page_header2 {
+    border: 2px rgb(37, 77, 110);
+    border-top-style: solid;
+    border-bottom-style: solid;
+    position: relative;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+.page_header2 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
+    margin-bottom: 0px;
     
 }
 
-.page_header nav ul li {
+.page_header2 nav ul li {
     display: inline-block;
     margin-right: 20px;
     margin-left: 20px
 }
 
 .header_button a{
-    color: rgb(30, 108, 172);
-    font-family: candara;
+    padding: 15px;
+    color: rgb(37, 77, 110);
+    font-family: arial;
     font-size: 14pt;
+    width: 100%;
+}
+
+.page_header2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
 }
 
 /***************/
@@ -58,15 +107,11 @@ h1 a, h2 a {
 /***************/
 
 .content_container {
-    background-color: #ffffff;
+    background-color: rgb(245, 245, 245);
     margin-left: auto;
     margin-right: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-h1, h2, h3, h4 {
-    font-family: candara;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /****************/
@@ -99,6 +144,11 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
+.post_detail {
+    width: 70%;
+    padding: 50px 110px;
+}
+
 .date {
     color: #828282;
     text-align: left;
@@ -106,7 +156,8 @@ h1, h2, h3, h4 {
 }
 
 .post h2 a, .post h2 a:visited, .post h2 {
-    color: rgb(30, 108, 172);
+    color: rgb(37, 77, 110);
+    font-weight: 600;
     float: left;
     width: 100%;
     text-align: left;
@@ -114,15 +165,13 @@ h1, h2, h3, h4 {
 }
 
 .post p {
-    color: rgb(82, 78, 82);
-    font-family: candara;
+    color: rgb(37, 77, 110);
+    font-family: Arial, Helvetica, sans-serif;
     font-stretch: semi-expanded;
     text-align: left;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;;
 }
-
-
 
 /***************************************/
 /*              TIMELINE               */
@@ -134,18 +183,21 @@ h1, h2, h3, h4 {
     position: relative;
     width: 1000px;
 }
+
 .timeline:before {
     content: '';
     position: absolute;
     left: 50%;
     width: 2px;
-    height: 100%;
+    height: 110%;
     background: #c5c5c5;
 }
+
 .timeline ul {
     margin: 0;
     padding: 0;
 }
+
 .timeline ul li {
     box-sizing: initial;
     line-height: normal;
@@ -154,8 +206,8 @@ h1, h2, h3, h4 {
     width: 43%;
     padding: 2px 20px 20px 20px;
     margin-bottom: 40px;
-    background-color: rgb(255, 214, 138);
-    box-shadow: 20px 10px 8px  rgb(30, 108, 172);
+    background-color: rgb(243, 212, 155);
+    box-shadow: 20px 10px 8px  rgb(37, 77, 110);
     height: relative;
 }
 
@@ -172,27 +224,37 @@ h1, h2, h3, h4 {
     text-align: left;
     clear: both;
 }
+
+.timeline ul li:nth-child(odd) div h5{
+    border-radius: 30px 10px 30px 30px;
+}
+
 .event {
     display: inline-block;
 }
 
 .event_time {
-    background-color: rgb(255, 232, 169);
+    background-color: rgb(255, 238, 189);
     border-radius: 10px 30px 30px 30px;
-    font-family: candara;
+    color: rgb(37, 77, 110);
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     padding: 5px 5px 5px 5px;
     width: 100%
 }
-.timeline ul li:nth-child(odd) div h5{
-    border-radius: 30px 10px 30px 30px;
+
+.event h4 {
+    color: rgb(37, 77, 110);
+    font-weight: 700;
 }
+
 .description {
-    color: rgb(0, 0, 0);
-    font-family: candara;
+    color: rgb(37, 77, 110);
+    font-family: arial;
     font-stretch: semi-expanded;
     font-size: 12px;
     line-height: 16px;
+    font-weight: 700;
 }
 
 
@@ -205,8 +267,8 @@ h1, h2, h3, h4 {
     top: -8px;
     width: 15px;
     height: 15px;
-    background: #5580dd;
-    box-shadow: 3px 3px 10px rgb(38, 101, 173);
+    background: rgb(74, 150, 212);
+    box-shadow: 3px 3px 10px  rgb(37, 77, 110);
     border-radius: 50%;
 }
 
@@ -219,10 +281,34 @@ h1, h2, h3, h4 {
 }
 /**********************/
 
+/***************/
+/*    FOOTER   */
+/***************/
+.page_footer {
+    position: relative;
+    left:0;
+    bottom: 0;
+    background-color: rgb(37, 77, 110);
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+.email{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 200px;
+    padding: 40px 0;
+    color: white;
+}
+/*************************/
 
 
+@media only screen and (max-width: 1060px) {
 
-@media screen and (max-width: 1060px) {
+    .post_detail {
+        width: 100%;
+        padding: 50px 110px;
+    }
 
     .timeline {
         width: 700px;
@@ -241,7 +327,30 @@ h1, h2, h3, h4 {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 840px) { 
+
+    .page_header {
+        min-height: 300px;
+        padding-top: 90px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) { 
+
+    .page_header {
+        min-height: 300px;
+        padding-top: 90px;
+        background-position: 0px -600px;
+    }
+    .post_detail {
+        width: 100%;
+        padding: 50px 60px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
 
     .timeline {
         width: 350px;
@@ -259,11 +368,15 @@ h1, h2, h3, h4 {
     }
 
     .timeline ul li:nth-child(odd) {
-        background-color: cornflowerblue;
+        background-color: rgb(110, 198, 224);
         border-radius: 10px 30px 30px 30px;
         float: right;
         text-align: left;
         clear: both;
+    }
+    .timeline ul li:nth-child(odd) div h5{
+        border-radius: 10px 30px 30px 30px;
+        background-color: rgb(183, 232, 255);
     }
 
     .timeline:before {
