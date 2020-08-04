@@ -365,6 +365,24 @@ h1 a, h2 a {
     }
     .post_wrapper {
         margin-right: 0%;
+        padding: 50px 38px;
+        width: 100%;
+    }
+    
+    .post h2 a, .post h2 a:visited, .post h2 {
+        line-height: 32px;
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    
+    .post p {
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .post_detail {
+        padding: 50px 38px;
+        width: 100%;
     }
 
     .timeline {
