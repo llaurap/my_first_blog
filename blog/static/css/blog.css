@@ -363,6 +363,9 @@ h1 a, h2 a {
         background: none;
         background-color: rgb(110, 198, 224);
     }
+    .post_wrapper {
+        margin-right: 0%;
+    }
 
     .timeline {
         width: 350px;
@@ -387,7 +390,7 @@ h1 a, h2 a {
         float: right;
         text-align: left;
     }
-    
+
     .timeline ul li:nth-child(odd) div h5{
         background-color: rgb(183, 232, 255);
         border-radius: 10px 30px 30px 30px;
