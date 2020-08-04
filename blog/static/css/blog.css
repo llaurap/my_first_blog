@@ -3,7 +3,7 @@ body {
 }
 
 h1 a, h2 a {
-    font-family: candara;
+    font-family: candara, serif;
 }
 
 /***************************************/
@@ -50,11 +50,11 @@ h1 a, h2 a {
 .page_header_section h1 a {
     font-stretch: semi-expanded;
     font-weight: 700;
-    text-shadow: 0px 1px 1px  rgb(37, 77, 110);
+    text-shadow: 0px 1px 2px  rgb(37, 77, 110);
 }
 .moto {
     color: rgb(255, 255, 255);
-    font-family: candara;
+    font-family: candara, serif;
     font-size: 16px;
     padding-top: 20px;
     text-align: center;
@@ -90,7 +90,7 @@ h1 a, h2 a {
 
 .header_button a {
     color: rgb(37, 77, 110);
-    font-family: candara;
+    font-family: candara, serif;
     font-size: 15pt;
     padding: 15px;
     width: 100%;
@@ -163,7 +163,7 @@ h1 a, h2 a {
     font-weight: 600;
     line-height: 36x;
     padding-bottom: 12px;
-    font-family: candara;
+    font-family: candara, serif;
     text-align: left;
     width: 100%;
 }
@@ -171,7 +171,7 @@ h1 a, h2 a {
 
 .post p {
     color: rgb(37, 77, 110);
-    font-family: candara;
+    font-family: candara, serif;
     font-stretch: semi-expanded;
     font-size: 20px;
     line-height: 32px;;
@@ -242,7 +242,7 @@ h1 a, h2 a {
     background-color: rgb(255, 238, 189);
     border-radius: 10px 30px 30px 30px;
     color: rgb(37, 77, 110);
-    font-family: candara;
+    font-family: candara, serif;
     font-weight: 600;
     padding: 5px 5px 5px 5px;
     width: 100%
@@ -250,14 +250,14 @@ h1 a, h2 a {
 
 .event h4 {
     color: rgb(37, 77, 110);
-    font-family: candara;
+    font-family: candara, serif;
     font-weight: 700;
     line-height: 27px;
 }
 
 .description {
     color: rgb(37, 77, 110);
-    font-family: candara;
+    font-family: candara, serif;
     font-stretch: semi-expanded;
     font-size: 15px;
     font-weight: 700;
@@ -294,7 +294,6 @@ h1 a, h2 a {
 .page_footer {
     bottom: 0;
     background-color: rgb(37, 77, 110);
-    color: white;
     height: 110px;
     left:0;
     position: relative;
@@ -302,11 +301,11 @@ h1 a, h2 a {
 }
 .email{
     color: white;
-    font-family: candara;
+    font-family: candara, serif;
     font-size: 16px;
     margin: auto;
     padding: 40px 0;
-    width: 250px;
+    width: 230px;
 }
 /***************************************/
 
