@@ -359,9 +359,15 @@ h1 a, h2 a {
 
 @media only screen and (max-width: 800px) {
 
+    .page_header {
+        background: none;
+        background-color: rgb(110, 198, 224);
+    }
+
     .timeline {
         width: 350px;
     }
+
     .timeline ul li {
         width: 76.55%;
     }
@@ -381,6 +387,7 @@ h1 a, h2 a {
         float: right;
         text-align: left;
     }
+    
     .timeline ul li:nth-child(odd) div h5{
         background-color: rgb(183, 232, 255);
         border-radius: 10px 30px 30px 30px;
@@ -390,8 +397,5 @@ h1 a, h2 a {
         left: 0%;
     }
 
-    .page_header {
-        background: none;
-        background-color: rgb(110, 198, 224);
-    }
+    
 }
