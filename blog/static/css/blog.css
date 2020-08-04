@@ -389,4 +389,9 @@ h1 a, h2 a {
     .timeline:before {
         left: 0%;
     }
+
+    .page_header {
+        background: none;
+        background-color: rgb(110, 198, 224);
+    }
 }
