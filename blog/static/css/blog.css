@@ -3,21 +3,20 @@ body {
 }
 
 h1 a, h2 a {
-    font-family: Arial, Helvetica, serif;
+    font-family: candara;
 }
 
-/****************/
-/*   HEADER 1   */
-/****************/
+/***************************************/
+/*              HEADER 1               */
+/***************************************/
 .page_header {
-    background-color: rgb(79, 193, 228);
+    background-color: none;
     padding: 140px 20px 20px 20px;
     left: 0;
     top: 0;
     width: 100%;
     
-
-   background-image: url(uni3.jpg);
+    background-image: url(uni3.jpg);
 
     min-height: 400px;  
     background-attachment: fixed;
@@ -28,10 +27,10 @@ h1 a, h2 a {
 }
 
 .admin_menu {
-    position: relative;
-    width: 300px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    width: 300px;
 }
 
 .top_menu{
@@ -41,10 +40,11 @@ h1 a, h2 a {
     margin-top: 0px;
 }
 
-.page_header_section h1, .page_header_section h1 a, .page_header_section h1 a:visited, .page_header_section h1 a:active {
-    text-align: center;
+.page_header_section h1, .page_header_section h1 a,
+ .page_header_section h1 a:visited, .page_header_section h1 a:active {
     color: #ffffff;
-    font-size: 36pt;
+    font-size: 38pt;
+    text-align: center;
     text-decoration: none;
 }
 .page_header_section h1 a {
@@ -53,30 +53,32 @@ h1 a, h2 a {
     text-shadow: 0px 1px 1px  rgb(37, 77, 110);
 }
 .moto {
-    text-align: center;
     color: rgb(255, 255, 255);
-    font-family: arial;
+    font-family: candara;
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: center;
 }
 
-/******************/
-/*    HEADER 2    */
-/******************/
+/***************************************/
+/*               HEADER 2              */
+/***************************************/
 
 .page_header2 {
+    background-color: rgb(245, 245, 245);
     border: 2px rgb(37, 77, 110);
     border-top-style: solid;
     border-bottom-style: solid;
     position: relative;
     width: 100%;
-    background-color: rgb(245, 245, 245);
 }
 
 .page_header2 nav ul {
     list-style-type: none;
+    margin-bottom: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    margin-bottom: 0px;
     
 }
 
@@ -86,11 +88,11 @@ h1 a, h2 a {
     margin-left: 20px
 }
 
-.header_button a{
-    padding: 15px;
+.header_button a {
     color: rgb(37, 77, 110);
-    font-family: arial;
-    font-size: 14pt;
+    font-family: candara;
+    font-size: 15pt;
+    padding: 15px;
     width: 100%;
 }
 
@@ -102,9 +104,9 @@ h1 a, h2 a {
     
 }
 
-/***************/
-/*   CONTENT   */
-/***************/
+/***************************************/
+/*               CONTENT               */
+/***************************************/
 
 .content_container {
     background-color: rgb(245, 245, 245);
@@ -114,9 +116,9 @@ h1 a, h2 a {
     padding-right: 0;
 }
 
-/****************/
-/*     BLOG     */
-/****************/
+/***************************************/
+/*                 BLOG                */
+/***************************************/
 
 .save {
     float: right;
@@ -127,26 +129,26 @@ h1 a, h2 a {
 }
 
 .post_wrapper {
-    padding-top: 30px;
-    text-align: center;
     margin-right: 10%;
+    max-width: 1100px;
     padding-left: 10%;
     padding-right: 10%;
-    max-width: 1100px;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .post {
     display:inline-block;
-    margin-bottom: 70px;
-    position: relative;
     left: auto;
+    margin-bottom: 70px;
     right: auto;
+    position: relative;
     width: 100%;
 }
 
 .post_detail {
-    width: 70%;
     padding: 50px 110px;
+    width: 70%;
 }
 
 .date {
@@ -157,20 +159,23 @@ h1 a, h2 a {
 
 .post h2 a, .post h2 a:visited, .post h2 {
     color: rgb(37, 77, 110);
-    font-weight: 600;
     float: left;
-    width: 100%;
-    text-align: left;
+    font-weight: 600;
+    line-height: 36x;
     padding-bottom: 12px;
+    font-family: candara;
+    text-align: left;
+    width: 100%;
 }
+
 
 .post p {
     color: rgb(37, 77, 110);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: candara;
     font-stretch: semi-expanded;
+    font-size: 19px;
+    line-height: 28px;;
     text-align: left;
-    font-size: 17px;
-    line-height: 24px;;
 }
 
 /***************************************/
@@ -185,12 +190,12 @@ h1 a, h2 a {
 }
 
 .timeline:before {
+    background: #c5c5c5;
     content: '';
-    position: absolute;
     left: 50%;
+    position: absolute;
     width: 2px;
     height: 110%;
-    background: #c5c5c5;
 }
 
 .timeline ul {
@@ -200,29 +205,29 @@ h1 a, h2 a {
 
 .timeline ul li {
     box-sizing: initial;
-    line-height: normal;
-    list-style: none;
-    position: relative;
-    width: 43%;
-    padding: 2px 20px 20px 20px;
-    margin-bottom: 40px;
     background-color: rgb(243, 212, 155);
     box-shadow: 20px 10px 8px  rgb(37, 77, 110);
     height: relative;
+    line-height: normal;
+    list-style: none;
+    margin-bottom: 40px;
+    padding: 2px 20px 20px 20px;
+    position: relative;
+    width: 43%;
 }
 
 .timeline ul li:nth-child(odd) {
     border-radius: 30px 10px 30px 30px;
+    clear: both;
     float: left;
     text-align: right;
-    clear: both;
 }
 
 .timeline ul li:nth-child(even) {
     border-radius: 10px 30px 30px 30px;
+    clear: both;
     float: right;
     text-align: left;
-    clear: both;
 }
 
 .timeline ul li:nth-child(odd) div h5{
@@ -237,7 +242,7 @@ h1 a, h2 a {
     background-color: rgb(255, 238, 189);
     border-radius: 10px 30px 30px 30px;
     color: rgb(37, 77, 110);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: candara;
     font-weight: 600;
     padding: 5px 5px 5px 5px;
     width: 100%
@@ -245,31 +250,33 @@ h1 a, h2 a {
 
 .event h4 {
     color: rgb(37, 77, 110);
+    font-family: candara;
     font-weight: 700;
+    line-height: 25px;
 }
 
 .description {
     color: rgb(37, 77, 110);
-    font-family: arial;
+    font-family: candara;
     font-stretch: semi-expanded;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 13px;
     font-weight: 700;
+    line-height: 16px;
 }
 
 
-/**********************/
-/*        DOTS        */
-/**********************/
+/***************************************/
+/*                DOTS                 */
+/***************************************/
 .timeline ul li:before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    width: 15px;
-    height: 15px;
     background: rgb(74, 150, 212);
     box-shadow: 3px 3px 10px  rgb(37, 77, 110);
     border-radius: 50%;
+    content: '';
+    height: 15px;
+    position: absolute;
+    top: -8px;
+    width: 15px;
 }
 
 .timeline ul li:nth-child(odd):before {
@@ -279,35 +286,35 @@ h1 a, h2 a {
 .timeline ul li:nth-child(even):before {
     left: -36.5px;
 }
-/**********************/
+/***************************************/
 
-/***************/
-/*    FOOTER   */
-/***************/
+/***************************************/
+/*               FOOTER                */
+/***************************************/
 .page_footer {
-    position: relative;
-    left:0;
     bottom: 0;
     background-color: rgb(37, 77, 110);
     color: white;
+    height: 107px;
+    left:0;
+    position: relative;
     width: 100%;
-    height: 100px;
 }
 .email{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
-    width: 200px;
-    padding: 40px 0;
     color: white;
+    font-family: candara;
+    margin: auto;
+    padding: 40px 0;
+    width: 200px;
 }
-/*************************/
+/***************************************/
 
 
 @media only screen and (max-width: 1060px) {
 
     .post_detail {
-        width: 100%;
         padding: 50px 110px;
+        width: 100%;
     }
 
     .timeline {
@@ -339,13 +346,13 @@ h1 a, h2 a {
 @media only screen and (max-width: 800px) { 
 
     .page_header {
+        background-position: 0px -600px;
         min-height: 300px;
         padding-top: 90px;
-        background-position: 0px -600px;
     }
     .post_detail {
-        width: 100%;
         padding: 50px 60px;
+        width: 100%;
     }
 
 }
@@ -370,13 +377,13 @@ h1 a, h2 a {
     .timeline ul li:nth-child(odd) {
         background-color: rgb(110, 198, 224);
         border-radius: 10px 30px 30px 30px;
+        clear: both;
         float: right;
         text-align: left;
-        clear: both;
     }
     .timeline ul li:nth-child(odd) div h5{
-        border-radius: 10px 30px 30px 30px;
         background-color: rgb(183, 232, 255);
+        border-radius: 10px 30px 30px 30px;
     }
 
     .timeline:before {
