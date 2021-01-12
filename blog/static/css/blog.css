@@ -10,15 +10,13 @@ h1 a, h2 a {
 /*              HEADER 1               */
 /***************************************/
 .page_header {
-    background-color: none;
-    padding: 140px 20px 20px 20px;
+    background-color: rgb(110, 198, 224);
+    padding: 60px 20px 20px 20px;
     left: 0;
     top: 0;
     width: 100%;
-    
-    background-image: url(uni3.jpg);
 
-    min-height: 400px;  
+    min-height: 260px;  
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,7 +48,8 @@ h1 a, h2 a {
 .page_header_section h1 a {
     font-stretch: semi-expanded;
     font-weight: 700;
-    text-shadow: 0px 1px 2px  rgb(37, 77, 110);
+    text-shadow: 2px 2px 0px  rgb(37, 77, 110);
+    color:  rgb(247, 234, 234);
 }
 .moto {
     color: rgb(255, 255, 255);
@@ -58,6 +57,7 @@ h1 a, h2 a {
     font-size: 16px;
     padding-top: 20px;
     text-align: center;
+    font-weight: 500;
 }
 
 /***************************************/
@@ -65,10 +65,14 @@ h1 a, h2 a {
 /***************************************/
 
 .page_header2 {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(247, 234, 234);
     border: 2px rgb(37, 77, 110);
-    border-top-style: solid;
-    border-bottom-style: solid;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-top-color: blue;
+    border-bottom-color: blue;
     position: relative;
     width: 100%;
 }
@@ -91,7 +95,7 @@ h1 a, h2 a {
 .header_button a {
     color: rgb(37, 77, 110);
     font-family: candara, serif;
-    font-size: 15pt;
+    font-size: 16pt;
     padding: 15px;
     width: 100%;
 }
@@ -207,6 +211,8 @@ h1 a, h2 a {
     box-sizing: initial;
     background-color: rgb(243, 212, 155);
     box-shadow: 20px 10px 8px  rgb(37, 77, 110);
+
+
     height: relative;
     line-height: normal;
     list-style: none;
@@ -214,6 +220,13 @@ h1 a, h2 a {
     padding: 2px 20px 20px 20px;
     position: relative;
     width: 43%;
+    
+    background-color: rgb(247, 234, 234);
+    box-shadow: 20px 10px 8px  rgb(37, 77, 110);
+    border-width: 4px;
+    border-style: dotted;
+    border-color: blue;
+    
 }
 
 .timeline ul li:nth-child(odd) {
@@ -239,7 +252,8 @@ h1 a, h2 a {
 }
 
 .event_time {
-    background-color: rgb(255, 238, 189);
+    /*background-color: rgb(255, 238, 189);*/
+    background-color: rgb(250, 231, 175);
     border-radius: 10px 30px 30px 30px;
     color: rgb(37, 77, 110);
     font-family: candara, serif;
@@ -293,7 +307,7 @@ h1 a, h2 a {
 /***************************************/
 .page_footer {
     bottom: 0;
-    background-color: rgb(37, 77, 110);
+    background-color: rgb(110, 198, 224);
     height: 110px;
     left:0;
     position: relative;
